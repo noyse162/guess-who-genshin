@@ -1,0 +1,47 @@
+
+body{
+    background-color: rgb(82, 5, 118);
+    text-align: center;
+}
+
+h1, h2{
+    color: rgb(180, 152, 177);
+    margin-bottom: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(8, 150px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.perso{
+    position: relative;
+    height: 150px;
+    background-color: lavender;
+    align-content: center;
+}
+
+.perso > img{
+    width: 100%;
+    cursor: pointer;    /*Indicates a link with cursor*/
+    object-fit: cover;
+}
+
+.cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(89, 80, 80, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10rem;
+    font-weight: bold;
+    pointer-events: none; /* To prevent blocking clicks */
+    z-index: 1; /* Ensure the cross is on top of everything */
+}
